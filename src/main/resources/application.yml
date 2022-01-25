@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: myJpaApp
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:myjpaapp
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: pwd
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      format_sql: true
+    show-sql: true
+
+# All actuator endpoints are enabled.
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,logfile,metrics,loggers,beans,caches,env
+  endpoint:
+    health:
+      show-details: always
+  metrics:
+    tags:
+      application: ${spring.application.name}

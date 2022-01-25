@@ -1,0 +1,3 @@
+--insert into book values(1,'John','The Tartar Steppe', CURRENT_DATE);
+--insert into book values(2,'Carl','Poem Strip', CURRENT_DATE);
+--insert into book values(3, 'John', 'Restless Nights: Selected Stories of Dino Buzzati', CURRENT_DATE );
