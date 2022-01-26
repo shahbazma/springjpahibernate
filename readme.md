@@ -1,8 +1,6 @@
 # Spring Boot Learning
 ## All features in one application
 
-[![Build Status]
-
 Learning Spring boot and features in single application
 
 ## Features
